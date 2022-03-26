@@ -1,13 +1,13 @@
 {
   "name": "Stepstone",
-  "description": "Helps you read quickly by bolding the first few letters of every word.",
+  "description": "Helps your brain speed read by bolding the first half of every word.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Click to make this page faster to read",
+    "default_title": "Click to speed your read",
     "default_icon": {
       "16": "/images/book-read-fill-16.png",
       "32": "/images/book-read-fill-32.png",
