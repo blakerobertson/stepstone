@@ -1,5 +1,4 @@
 chrome.action.onClicked.addListener(tab => {
-    console.log("tag.id",tab.id)
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
         function: emboldenFirstLetters
@@ -7,7 +6,6 @@ chrome.action.onClicked.addListener(tab => {
 });
 
 function emboldenFirstLetters() {
-    console.log("hello")
     let ptags = document.body.getElementsByTagName("p");
     for (let ptag of ptags) {
         // capture the initial state of childNodes because we'll be changing it
