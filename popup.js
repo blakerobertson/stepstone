@@ -15,18 +15,19 @@ function emboldenFirstLetters() {
             // n could be an inline element or something, so check its type
             // note: TEXT_NODE type includes attribute values too (?!) so if we make this recursive later we'll need to account for that
             if (n.nodeType === Node.TEXT_NODE) {
-                const words = Array.from(n.nodeValue.matchAll(/\b([a-zA-Z]+)/g));
-                console.log('words', words[0]);
+                const words = Array.from(n.nodeValue.matchAll(/\b[a-zA-Z]+/g));
 
                 for (let i=words.length-1; i>=0; i--) {
                     let word_node = n.splitText(words[i].index);
-                    console.log("word_node", word_node.nodeValue);
                     // n now contains everything before the matched word while
                     // word_node is a new text node containing the word itself
-                    // AND ANY \b CHAR BEFORE IT AND ANY NON-ALPHA CHARS AFTER IT
+                    // and any word boundary char before it and any non-alpha chars after it
 
-                    let halflength = (word_node.nodeValue.length+1)/2;
-                    let word_tail_node = word_node.splitText(halflength);
+                    let actual_word = word_node.nodeValue.match(/[a-zA-Z]+/);
+                    let leading_char_cnt = actual_word.index;
+                    let word_length = actual_word[0].length;
+                    let halflength = (word_length+1)/2;
+                    let word_tail_node = word_node.splitText(leading_char_cnt+halflength);
                     // word_node is now the first half of the word and word_tail_node is the last half
 
                     let span = document.createElement("span");
