@@ -12,6 +12,6 @@ This isn't available in the extensions store currently, but if you wanted to try
 - You should now see it in your extensions list
 
 # Usage
-Browse to any page with paragraphs of text (i.e. <p> tags in the html), and then just click the extension icon. The first half of every word of those paragraphs should be bolded.
+Browse to any page with paragraphs of text (i.e. `<p>` tags in the html), and then just click the extension icon. The first half of every word of those paragraphs should be bolded.
 
 In theory, this helps your brain pattern match on words and improves retention when speed reading. I hope to use this extension to actually test that theory. :)
