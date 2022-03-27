@@ -1,7 +1,11 @@
 # Stepstone
-A simple chrome extension that helps your brain speed-read by bolding the first half of every word on the page.
+A simple chrome extension that helps your brain speed-read by bolding the first half of every word on the page. In theory, this helps your brain pattern match on words and improves retention when speed reading. I hope to use this extension to actually test that theory. :)
 
-Just an interesting little evening project really.
+# Comparison
+## Original
+![Wikipedia's Speed Reading article](images/demo-before.png)
+## Enhanced
+![Wikipedia's Speed Reading article with enhancement](images/demo-after.png)
 
 # Installation
 This isn't available in the extensions store currently, but if you wanted to try it:
@@ -14,4 +18,3 @@ This isn't available in the extensions store currently, but if you wanted to try
 # Usage
 Browse to any page with paragraphs of text (i.e. `<p>` tags in the html), and then just click the extension icon. The first half of every word of those paragraphs should be bolded.
 
-In theory, this helps your brain pattern match on words and improves retention when speed reading. I hope to use this extension to actually test that theory. :)
