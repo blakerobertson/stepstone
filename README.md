@@ -2,6 +2,7 @@
 A simple chrome extension that helps your brain speed-read by bolding the first half of every word on the page. In theory, this helps your brain pattern match on words and improves retention when speed reading. I hope to use this extension to actually test that theory. :)
 
 # Comparison
+Excerpt from [Wikipedia](https://simple.wikipedia.org/wiki/Speed_reading):
 ## Original
 ![Wikipedia's Speed Reading article](images/demo-before.png)
 ## Enhanced
